@@ -1,0 +1,15 @@
+﻿1>------ Derleme başladı: Proje: Assembly-CSharp, Yapılandırma: Debug Any CPU ------
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(9,19,9,26): warning CS0649: 'camerafollow.smoothX' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\LadderMovement.cs(12,25,12,28): warning CS0649: 'LadderMovement.rgb' alanı hiçbir zaman atanmaz ve her zaman varsayılan null değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(13,19,13,23): warning CS0649: 'camerafollow.minX' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(19,19,19,23): warning CS0649: 'camerafollow.maxY' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(11,19,11,26): warning CS0649: 'camerafollow.smoothY' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs(9,30,9,41): warning CS0649: 'ColorSwap_HeroKnight.m_newColors' alanı hiçbir zaman atanmaz ve her zaman varsayılan null değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(17,19,17,23): warning CS0649: 'camerafollow.minY' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\camerafollow.cs(15,19,15,23): warning CS0649: 'camerafollow.maxX' alanı hiçbir zaman atanmaz ve her zaman varsayılan 0 değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs(8,30,8,44): warning CS0649: 'ColorSwap_HeroKnight.m_sourceColors' alanı hiçbir zaman atanmaz ve her zaman varsayılan null değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\dash.cs(13,41,13,43): warning CS0649: 'dash.tr' alanı hiçbir zaman atanmaz ve her zaman varsayılan null değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\Hero Knight - Pixel Art\Demo\HeroKnight.cs(10,33,10,44): warning CS0649: 'HeroKnight.m_slideDust' alanı hiçbir zaman atanmaz ve her zaman varsayılan null değerine sahip olur
+1>C:\Users\Osman\Desktop\gitrepos\backtothedark\Assets\dash.cs(9,15,9,24): warning CS0414: 'dash.isDashing' alanı atanır ancak değeri hiçbir zaman kullanılmaz
+1>  Assembly-CSharp -> C:\Users\Osman\Desktop\gitrepos\backtothedark\Temp\Bin\Debug\Assembly-CSharp.dll
+========== Oluşturma: 1 başarılı, 0 başarısız, 0 güncel, 0 atlandı ==========

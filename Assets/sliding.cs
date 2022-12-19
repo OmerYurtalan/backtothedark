@@ -16,7 +16,8 @@ public class sliding : MonoBehaviour
         rgb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame pushh deneme
+
     void Update()
     {
         kayma();
