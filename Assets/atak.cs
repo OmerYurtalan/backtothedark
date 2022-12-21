@@ -12,7 +12,8 @@ public class atak : MonoBehaviour
     public int attackDamage = 40;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
-    
+    temel temel;
+  
     void Start()
     {
         rgb = GetComponent<Rigidbody>();
@@ -25,18 +26,22 @@ public class atak : MonoBehaviour
         {
             Atak();
             
-           
-        }
-      
-    }
+		}
+        
+
+	}
     public void Atak()
     {
-        if (Input.GetKeyDown(KeyCode.C) && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
+		
+		if (Input.GetKeyDown(KeyCode.C) && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
         {
-            attack();
+            temel.speedAmount = 0f;
+			attack();
             nextAttackTime = Time.time+1f/attackRate;
-        }
-    }
+           
+		}
+		
+	}
     void attack()
     {
         animator.SetTrigger("atakani");
