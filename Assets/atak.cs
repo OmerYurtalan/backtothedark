@@ -22,11 +22,9 @@ public class atak : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time >= nextAttackTime)
-        {
+        
             Atak();
-            
-		}
+        
         
 
 	}
@@ -35,10 +33,10 @@ public class atak : MonoBehaviour
 		
 		if (Input.GetKeyDown(KeyCode.C) && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
         {
-            temel.speedAmount = 0f;
+            
 			attack();
             nextAttackTime = Time.time+1f/attackRate;
-           
+            temel.velocity = Vector3.zero;
 		}
 		
 	}
