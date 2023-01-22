@@ -43,4 +43,6 @@ public class dash : MonoBehaviour
 		yield return new WaitForSeconds(dashingCooldown);
 		canDash = true;
 	}
+	//asfakubhsf
+
 }
