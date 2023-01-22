@@ -25,11 +25,13 @@ public class LadderMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            rgb.gravityScale = 5f;
+            speed = 4;
+            rgb.gravityScale = 2f;
             rgb.velocity = new Vector2(rgb.velocity.x, vertical * speed);
         }
         else
         {
+            speed = 8;
             rgb.gravityScale = 1f;
         }
     }
@@ -46,7 +48,7 @@ public class LadderMovement : MonoBehaviour
         {
             isLadder = false;
             isClimbing = false;
-            rgb.velocity = new Vector2(0, vertical * 0);
+            //rgb.velocity = new Vector2(0, vertical * 0);
         }
     }
 }
