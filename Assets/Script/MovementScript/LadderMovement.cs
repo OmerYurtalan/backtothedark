@@ -25,7 +25,7 @@ public class LadderMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            speed = 4;
+            speed = 3;
             rgb.gravityScale = 2f;
             rgb.velocity = new Vector2(rgb.velocity.x, vertical * speed);
         }
