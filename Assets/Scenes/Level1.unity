@@ -325,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpAmount: 4.5
+  doubleJump: 0
   animator: {fileID: 51907574}
 --- !u!114 &51907581
 MonoBehaviour:
@@ -356,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 51907574}
   attackPoint: {fileID: 271770279}
-  attackRange: 0.5
+  attackRange: 1.1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
