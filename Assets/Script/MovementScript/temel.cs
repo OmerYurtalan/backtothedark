@@ -17,7 +17,7 @@ public class temel : MonoBehaviour
 	public float dashLength = 0.5f, dashCoolDown = 1f;
 	private float dashCounter;
 	private float dashCoolCounter;
-	atak atak1;
+	jump jump;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -71,12 +71,19 @@ public class temel : MonoBehaviour
 		if (!this.slide.animator.GetBool("slide") && !this.atak.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
 		{
 			velocity = new Vector3(Input.GetAxis("Horizontal"), 0f);
-
 		}
-
-		transform.position += velocity * Time.deltaTime * activeMoveSpeed;
+		if (!this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
+		{
+			transform.position += velocity * Time.deltaTime * activeMoveSpeed;
+		}
+		else if(this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani") && Mathf.Approximately(rgb.velocity.y, 0))
+		{
+			transform.position += velocity * 0;
+		}
+		else if (this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani") && !Mathf.Approximately(rgb.velocity.y, 0))
+		{
+			transform.position += velocity * Time.deltaTime * activeMoveSpeed;
+		}
 		animator.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-
 	}
-
 }

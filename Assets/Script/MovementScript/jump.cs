@@ -7,7 +7,7 @@ public class jump : MonoBehaviour
     Rigidbody2D rgb;
     Vector3 velocity;
     public float jumpAmount = 4.5f;
-    bool doubleJump;
+    public bool doubleJump;
     public Animator animator;
     // Start is called before the first frame update
     void Start()

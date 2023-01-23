@@ -22,33 +22,33 @@ public class atak : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
             Atak();
-        
-        
-
 	}
     public void Atak()
     {
 		
 		if (Input.GetKeyDown(KeyCode.C) && !this.animator.GetCurrentAnimatorStateInfo(0).IsTag("atakani"))
         {
-            
+			
+           
 			attack();
-            nextAttackTime = Time.time+1f/attackRate;
-            temel.velocity = Vector3.zero;
+			
+			nextAttackTime = Time.time+1f/attackRate;
+			
 		}
 		
 	}
     void attack()
     {
-        animator.SetTrigger("atakani");
+		
+		animator.SetTrigger("atakani");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
         foreach(Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
-    }
+		
+	}
     private void OnDrawGizmosSelected()
     {
         if(attackPoint == null)
