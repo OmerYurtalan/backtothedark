@@ -12,16 +12,16 @@ public class dash : MonoBehaviour
 	private float dashingCooldown = 1f;
 	[SerializeField] private TrailRenderer tr;
 	temel temel;
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Start is called before the first frame update
+	void Start()
+	{
 		rb = GetComponent<Rigidbody2D>();
-        
+
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update()
+	{
 		if (Input.GetKeyDown(KeyCode.LeftAlt) && canDash)
 		{
 			StartCoroutine(Dash());
@@ -44,5 +44,6 @@ public class dash : MonoBehaviour
 		canDash = true;
 	}
 	//asfakubhsf
+	//asfshdefhsdfhsdgh
 
 }

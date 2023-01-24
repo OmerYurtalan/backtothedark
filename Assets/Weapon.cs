@@ -6,16 +6,20 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float max=0;
+    public int max=3;
+	int shooting=0;
     // Update is called once per frame
     void Update()
     {
-
+		if (shooting < max)
+		{
 			if (Input.GetButtonDown("Fire1"))
 			{
 				Shoot();
-				
+				shooting++;
 			}
+		}
+		
 
 	}
 	

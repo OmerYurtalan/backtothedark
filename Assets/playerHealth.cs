@@ -8,21 +8,30 @@ public class playerHealth : MonoBehaviour
     public int currentHealth;
     public Animator animator;
     public HealthBar healthBar;
-    
+    bool isDead;
 
     void Start()
     {
+        isDead = false;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.O))
+        if (!isDead)
         {
-            TakeDamage(20);
-        }
+			checkhealth();
+		}
+        
         
     }
+    public void checkhealth()
+    {
+		if (Input.GetKeyUp(KeyCode.O))
+		{
+			TakeDamage(20);
+		}
+	}
 
     // Update is called once per frame
     public void TakeDamage(int damage)
@@ -38,6 +47,10 @@ public class playerHealth : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
-        
-    }
+		GetComponent<temel>().enabled = false;
+        GetComponent<jump>().enabled = false;
+		GetComponent<atak>().enabled = false;
+        GetComponent<Weapon>().enabled = false;
+        isDead = true;
+	}
 }
