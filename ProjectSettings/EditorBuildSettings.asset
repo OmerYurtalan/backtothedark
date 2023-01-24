@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: 73b78e2710ef7334eb9dd2425493151f
+  - enabled: 1
+    path: Assets/Scenes/Are You Sure.unity
+    guid: d3a1eec487e58f14e949ff43e71d79b3
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 2d0edcedb9e249545bef93a92379db98, type: 2}
