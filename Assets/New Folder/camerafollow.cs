@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class camerafollow : MonoBehaviour
 {
-    private Transform player;
+    temel player;
+
     [SerializeField]
-    private float smoothX;
-    [SerializeField]
-    private float smoothY;
-    [SerializeField]
-    private float minX;
-    [SerializeField]
-    private float maxX;
-    [SerializeField]
-    private float minY;
-    [SerializeField]
-    private float maxY;
-    void Start()
+    Collider2D boundsBox;
+
+    float halfYukseklik, halfGenislik;
+
+    private void Awake()
     {
-        player = GameObject.Find("karakter").transform;
+        player = Object.FindObjectOfType<temel>();
+    }
+    private void Start()
+    {
+        halfYukseklik = Camera.main.orthographicSize ;
+        halfGenislik= halfYukseklik*Camera.main.aspect;
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+    private void Update()
     {
-        float posX = Mathf.MoveTowards(transform.position.x,player.position.x,smoothX);
-        float posY = Mathf.MoveTowards(transform.position.y, player.position.y, smoothY);
-        transform.position = new Vector3(Mathf.Clamp(posX, minX, maxX),Mathf.Clamp(posY,minY,maxY),transform.position.z);
+        transform.position = new Vector3(
+            Mathf.Clamp(player.transform.position.x,boundsBox.bounds.min.x+halfGenislik,boundsBox.bounds.max.x-halfGenislik), 
+            Mathf.Clamp(player.transform.position.y, boundsBox.bounds.min.y+halfYukseklik, boundsBox.bounds.max.y-halfYukseklik),
+            transform.position.z);
     }
 }
