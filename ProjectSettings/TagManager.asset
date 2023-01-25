@@ -6,6 +6,7 @@ TagManager:
   tags:
   - atakani
   - Ladder
+  - Item
   layers:
   - Default
   - TransparentFX

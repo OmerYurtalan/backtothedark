@@ -38,6 +38,7 @@ public class LadderMovement : MonoBehaviour
         if (collision.CompareTag("Ladder"))
         {
             isLadder = true;
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
