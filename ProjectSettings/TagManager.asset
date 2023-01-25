@@ -10,15 +10,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - rainn
   - Water
   - UI
   - Player
   - Enemies
   - BackGound
   - BackGround2
-  - 
-  - 
+  - rain
+  - efektler
   - 
   - 
   - 
@@ -42,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: efektler
+    uniqueID: 1973337915
     locked: 0
