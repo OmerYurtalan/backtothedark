@@ -7,10 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public void ResumeGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2);
     }
     public void ExitGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -4);
     }
 }
