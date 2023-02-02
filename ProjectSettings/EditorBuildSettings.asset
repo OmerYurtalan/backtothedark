@@ -9,19 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ac2341307c7a61d419065200ac22bc82
   - enabled: 1
-    path: Assets/Scenes/PlayButton.unity
-    guid: 58e856ac9732c8e4eaee13cdb317aec3
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 008e825a03cdbd64c8b2932649f381b8
-  - enabled: 1
-    path: Assets/Scenes/SettingsMenu.unity
-    guid: 488a1d2ad14cf2c45a46888180864866
-  - enabled: 1
-    path: Assets/Scenes/PauseMenu.unity
-    guid: 73b78e2710ef7334eb9dd2425493151f
-  - enabled: 1
-    path: Assets/Scenes/Are You Sure.unity
-    guid: d3a1eec487e58f14e949ff43e71d79b3
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 2d0edcedb9e249545bef93a92379db98, type: 2}

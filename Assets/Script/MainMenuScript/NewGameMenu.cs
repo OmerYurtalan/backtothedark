@@ -9,6 +9,8 @@ public class NewGameMenu : MonoBehaviour
     public GameObject nesne1;
     public GameObject nesne2;
     public GameObject savemenu;
+    public GameObject Main_Menu;
+    public GameObject NewGame_Menu;
     
 
    
@@ -39,5 +41,12 @@ public class NewGameMenu : MonoBehaviour
     public void PlayButton2()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void BackButton()
+    {
+        NewGame_Menu.SetActive(false);
+        Main_Menu.SetActive(true);
+        
     }
 }
