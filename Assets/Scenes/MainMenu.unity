@@ -2954,6 +2954,7 @@ MonoBehaviour:
   Options_Menu: {fileID: 2005362807}
   Pause_Menu: {fileID: 42145993}
   Are_You_Sure: {fileID: 257732120}
+  New_Game_Menu: {fileID: 1948022674}
 --- !u!1 &620164230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,10 +4014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf1f1b65d14c0d4aa0b9087a84a048c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeAmount1: {fileID: 0}
-  volumeAmount2: {fileID: 0}
-  slider1: {fileID: 0}
-  slider2: {fileID: 0}
+  volumeAmount1: {fileID: 1492832073}
+  volumeAmount2: {fileID: 1738902871}
+  slider1: {fileID: 1540802175}
+  slider2: {fileID: 150843954}
   musicSounds:
   - name: DarkAtmosphere
     clip: {fileID: 8300000, guid: cd15093e2406d8945b93cdef60d17e04, type: 3}
@@ -7713,6 +7714,7 @@ MonoBehaviour:
   Options_Menu: {fileID: 2005362807}
   Pause_Menu: {fileID: 0}
   Are_You_Sure: {fileID: 0}
+  New_Game_Menu: {fileID: 0}
 --- !u!114 &2005362809
 MonoBehaviour:
   m_ObjectHideFlags: 0
